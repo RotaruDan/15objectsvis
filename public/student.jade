@@ -1,0 +1,60 @@
+extends layout
+
+block content
+    div.container
+        h1#code Código
+        h2#time Tiempo total
+        div.container
+            h4#sta Inicio
+            h4#end Fin
+        h2#dobj Objetos diferentes respondidos
+        h2#corr Número de respuestas correctas
+        h2#erro Número de respuestas a analizar
+        h2 Respuestas correctas
+        table#corrtable.table
+            thead.thead-dark
+                tr
+                    th(scope="col") #
+                    th(scope="col") Objeto
+                    th(scope="col") Respuesta
+                    th(scope="col") Sinónimos
+                    th(scope="col") Otros Hits
+                    th(scope="col") Hora
+            tbody
+        h2 Respuestas incorrectas
+        table#errotable.table
+            thead.thead-dark
+                tr
+                    th(scope="col") #
+                    th(scope="col") Respuesta
+                    th(scope="col") Hits
+                    th(scope="col") Hora
+            tbody
+        h2 Respuestas repetidas
+        table#repeatedtable.table
+            thead.thead-dark
+                tr
+                    th(scope="col") #
+                    th(scope="col") Respuesta
+                    th(scope="col") Veces Repetida
+            tbody
+        h2 Pre Test
+            h4#age ¿Cual es su edad?
+            h4#sex ¿Cual es su sexo?
+            h4#edu ¿Cuál es su nivel educativo?
+            h4#dis ¿Qué dispositivos electrónicos ha utilizado al menos alguna vez?
+            h4#dia ¿Cuántos días a la semana utiliza dispositivos electronicos como por ejemplo movil, ordenador, tablet, etc.?
+            h4#uti Utiliza dispositivos electrónicos para (puede marcar varias):
+        h2 Post Test
+            h4#gus ¿Le ha gustado la actividad?
+            h4#fac ¿Le ha parecido fácil la actividad?
+            h4#dur ¿La duración de la actividad le ha parecido adecuada?
+            h4#dif ¿Ha disfrutado realizando la actividad?
+            h3 ¿Con qué frecuencia usa las siguientes redes sociales?
+                h4#wha WhatsApp
+                h4#ins Instagram
+                h4#fae Facebook
+                h4#twi Twitter
+                h4#tel Telegram
+            h3#opi ¿Qué le ha parecido la actividad y qué cambiaría?
+    script(src="/js/student.js")

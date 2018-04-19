@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    div.container
+        h1 Experimento
+        p Elastic URL:
+        input#host(type='text', name='Elastic URL', value='https://analytics.e-ucm.es/api/proxy/e/')
+        br
+        p Class ID:
+        input#classid(type='text', name='Class ID', value='5acf9aebca50e50077decc6d')
+        br
+        p Limesurvey Host:
+        input#lshost(type='text', name='Limesurvey Host', value='https://polls.e-ucm.es/')
+        br
+        p Limesurvey Username:
+        input#lsuser(type='text', name='Limesurvey Username', value='admin')
+        br
+        p Limesurvey Username:
+        input#lspass(type='password', name='Limesurvey Password', value='123456')
+        br
+        input#start(type='button', name='Start', value='Start')
+    div#users.container
+    script(src="/js/index.js")
